@@ -1,9 +1,9 @@
-import { AddNewItem } from './AddNewItem';
 import { Column } from './Column';
+import { AppContainer } from './style';
+import { useAppState } from './state/AppStateContext';
+import { AddNewItem } from './AddNewItem';
 import { CustomDragLayer } from './CustomDragLayer';
 import { addList } from './state/actions';
-import { useAppState } from './state/AppStateContext';
-import { AppContainer } from './style';
 
 const App = () => {
   const {lists, dispatch} = useAppState()

@@ -23,7 +23,7 @@ export type AppState = {
 export const appStateReducer = (draft: AppState, action: Action): AppState | void => {
   switch (action.type) {
     case "ADD_LIST": {
-      draft.lists.push({ id: 'SOME_ID', text: action.payload, tasks: [] })
+      draft.lists.push({ id: nanoid(), text: action.payload, tasks: [] })
       break;
     }
 

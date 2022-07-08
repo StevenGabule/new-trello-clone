@@ -12,13 +12,11 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <React.StrictMode>
-    <DndProvider backend={Backend}>
+  <DndProvider backend={Backend}>
     <AppStateProvider>
       <App />
     </AppStateProvider>
-    </DndProvider>
-  </React.StrictMode>
+  </DndProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

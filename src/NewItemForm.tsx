@@ -1,4 +1,4 @@
-import React, { KeyboardEvent, useState } from "react";
+import { KeyboardEvent, useState } from "react";
 import { NewItemButton, NewItemFormContainer, NewItemInput } from "./style";
 import { useFocus } from "./utils/useFocus";
 
